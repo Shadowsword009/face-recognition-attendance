@@ -1,0 +1,145 @@
+/* Make the entire container take up the full screen */
+.post-attendance-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f4f6f9;
+}
+
+/* Title Styling */
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Main content layout: Flex container with two sections */
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+}
+
+/* Left Section: Image Upload & Recognition */
+.left-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid #ddd;
+  background: white;
+}
+
+/* File input styling */
+.file-input {
+  margin-bottom: 10px;
+}
+
+/* Styling for uploaded image preview */
+.image-preview {
+  width: 90%;  /* Reduced from 90% */
+  max-width: 400px;  /* Reduced from 400px */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #007bff;
+}
+
+
+/* Upload & Recognize Button */
+.upload-button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.upload-button:hover {
+  background: #0056b3;
+}
+
+/* Recognized Faces Section */
+.message {
+  font-size: 16px;
+  font-weight: bold;
+  color: green;
+  margin-top: 10px;
+}
+
+.face-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.face-item {
+  font-size: 16px;
+  background: #f8f9fa;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Right Section: Attendance Table */
+.right-section {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: white;
+}
+
+/* Show Table Button */
+.show-table-button {
+  background: #28a745;
+  color: white;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.show-table-button:hover {
+  background: #218838;
+}
+
+/* Attendance Table */
+.attendance-table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.attendance-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.attendance-table th, .attendance-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.attendance-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.attendance-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

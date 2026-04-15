@@ -1,0 +1,96 @@
+/* Background */
+body {
+  background: url('background.jpg') no-repeat center center/cover;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Centered Login Box */
+.home-container {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.15); /* More transparency */
+  backdrop-filter: blur(15px); /* Stronger blur for glassmorphism effect */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Heading */
+.home-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.login-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+.login-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Space between buttons */
+  margin-top: 10px;
+}
+
+.login-form button,
+.new-teacher-button {
+  background: rgba(0, 123, 255, 0.8);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover,
+.new-teacher-button:hover {
+  background: rgba(0, 123, 255, 1);
+  transform: scale(1.03);
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4d4d;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .home-container {
+    width: 90%;
+  }
+}
